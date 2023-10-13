@@ -1,4 +1,4 @@
-import 'package:ar_navigation/pages/shop_detail_page.dart';
+import 'package:bifuar/pages/shop_detail_page.dart';
 import 'package:flutter/material.dart';
 
 import 'fair_detail_page.dart';

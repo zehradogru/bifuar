@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'navi_bar.dart';
+
+
 void main() {
   runApp(const MainApp());
 }
@@ -10,11 +13,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello Worldd!'),
-        ),
-      ),
+        home: NaviBar()
     );
   }
 }

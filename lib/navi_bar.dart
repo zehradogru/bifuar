@@ -1,5 +1,6 @@
 import 'package:bifuar/pages/explore_page.dart';
 import 'package:bifuar/pages/home_page.dart';
+import 'package:bifuar/pages/navigation_page.dart';
 import 'package:flutter/material.dart';
 
 class NaviBar extends StatefulWidget {
@@ -12,7 +13,7 @@ class NaviBar extends StatefulWidget {
 class _NaviBarState extends State<NaviBar> {
   List<Widget> pages = [
     const HomePage(),
-    const ArPage(),
+    const NavigationPage(),
     const ExplorePage(),
   ];
   int current = 0;
