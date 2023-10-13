@@ -1,8 +1,5 @@
-import 'package:ar_navigation/pages/ar_page.dart';
-import 'package:ar_navigation/pages/home_page.dart';
-import 'package:ar_navigation/pages/map_page.dart';
-import 'package:ar_navigation/pages/navigation_page.dart';
-import 'package:ar_navigation/pages/settings_page.dart';
+import 'package:bifuar/pages/explore_page.dart';
+import 'package:bifuar/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class NaviBar extends StatefulWidget {
@@ -16,8 +13,7 @@ class _NaviBarState extends State<NaviBar> {
   List<Widget> pages = [
     const HomePage(),
     const ArPage(),
-    const MapPage(),
-    const SettingsPage(),
+    const ExplorePage(),
   ];
   int current = 0;
 
@@ -70,10 +66,8 @@ class _NaviBarState extends State<NaviBar> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             _buildNavBarItem(0, Icons.home_rounded, 'Home'),
-            _buildNavBarItem(1, Icons.star_border_outlined, 'Shops'),
             const SizedBox(width: 40.0),
             _buildNavBarItem(2, Icons.location_on, 'Map'),
-            _buildNavBarItem(3, Icons.settings, 'Settings'),
           ],
         ),
       ),
